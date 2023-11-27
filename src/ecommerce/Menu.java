@@ -9,18 +9,17 @@ import ecommerce.util.Cores;
 
 public class Menu {
 
-	public static void main(String[] args) {
-				
-		Scanner input = new Scanner(System.in);
-		System.out.println("Digite 1 para Cliente, 2 para Funcionário e 3 para Sair: ");
-		int opcao;
-		
+	public static void main(String[] args) {			
 		
 		Instrumento i1 = new Instrumento(1,"Guitarra",1,2,199);
 		i1.visualizar(null);
 		
 		Musica m1 = new Musica(2,"Pink Floyd - The Wall",2,2,500);
 		m1.visualizar(null);
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Digite 1 para Cliente, 2 para Funcionário e 3 para Sair: ");
+		int opcao;
 		
 		//Realiza login como Cliente ou Funcionario
 		while(true) {
