@@ -18,6 +18,10 @@ public class Musica extends Produto {
 		case 2:
 			nomeVariacao = "Vinil";
 			break;
+		case 3:
+			nomeVariacao = "Arquivo Digital";
+			break;
+
 		}
 		super.visualizar(nomeVariacao);
 		

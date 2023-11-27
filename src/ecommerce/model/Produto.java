@@ -80,7 +80,7 @@ public abstract class Produto {
 			tipo = "Instrumentos";
 			break;
 		case 2:
-			tipo = "Musica Midia Fisica";
+			tipo = "Musica - Midia Fisica";
 			break;
 			
 			
@@ -91,7 +91,7 @@ public abstract class Produto {
 		System.out.println(Cores.TEXT_RED + "***********************************************************");
 		System.out.println(Cores.TEXT_WHITE + "Nome do Produto: " + this.nome);
 		System.out.println("Numero do Produto: " + this.numero);
-		System.out.println("Tipo da Produto: " + tipo);
+		System.out.println("Categoria: " + tipo);
 		System.out.println("Variação: " + variacao);
 		System.out.println("Preco: " + this.preco);
 	}
