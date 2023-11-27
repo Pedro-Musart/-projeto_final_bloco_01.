@@ -3,7 +3,9 @@ package ecommerce;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import conta.util.Cores;
+import ecommerce.model.Instrumento;
+import ecommerce.model.Musica;
+import ecommerce.util.Cores;
 
 public class Menu {
 
@@ -13,7 +15,14 @@ public class Menu {
 		System.out.println("Digite 1 para Cliente, 2 para Funcionário e 3 para Sair: ");
 		int opcao;
 		
-		//realiza login como Cliente ou Funcionario
+		
+		Instrumento i1 = new Instrumento(1,"Guitarra",1,2,199);
+		i1.visualizar(null);
+		
+		Musica m1 = new Musica(2,"Pink Floyd - The Wall",2,2,500);
+		m1.visualizar(null);
+		
+		//Realiza login como Cliente ou Funcionario
 		while(true) {
 			
 			
@@ -41,7 +50,7 @@ public class Menu {
 		// Area do Cliente
 		if(opcao == 1) {
 			
-			//continua o menu até entrar na condição 5 que dá exit no programa
+			//Continua o menu até entrar na condição 5 que dá exit no programa
 			while(true) {
 				
 				System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
@@ -146,7 +155,7 @@ public class Menu {
 				
 				
 				if (opcao == 7) {
-					System.out.println("            Loja Musica é Arte!          ");
+					System.out.println("             Loja Musica é Arte!          ");
 					System.out.println("           Obrigado por colaborar!     \n");
 					sobre();
 					input.close();
